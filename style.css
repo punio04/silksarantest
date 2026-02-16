@@ -292,6 +292,15 @@ i.right {
   width: 60%;
 }
 
+.fv__video {
+  position: absolute;
+  left: 67%;
+  transform: translateX(-50%);
+  top: 8%;
+  width: 41%;
+  z-index: -1;
+}
+
 .cv1.pc {
   position: relative;
 }
@@ -305,6 +314,13 @@ i.right {
 .cv1__video video {
   width: 100%;
   display: block;
+}
+
+.fv__video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  mask-image: linear-gradient(to right, transparent 0%, #000000 8%);
 }
 
 .cv2__video video {
@@ -372,6 +388,23 @@ i.right {
     width: 90%;
   }
 
+  footer div {
+    width: 100%;
+  }
+
+  .fv__video {
+    position: absolute;
+    left: 69%;
+    transform: translateX(-50%);
+    top: 8%;
+    width: 62%;
+    z-index: -1;
+  }
+
+  .fv__video video {
+    mask-image: linear-gradient(to right, transparent 0%, #000000 18%);
+  }
+
   .cv2__video {
     position: absolute;
     left: 50%;
@@ -403,7 +436,7 @@ i.right {
   .cv1 .btn {
     position: absolute;
     top: 53%;
-    left: 4%;
+    left: 11%;
     right: 4%;
   }
 
@@ -414,6 +447,13 @@ i.right {
 
 
 @media screen and (max-width: 640px) {
+
+  .cv1 .btn {
+    position: absolute;
+    top: 53%;
+    left: 4%;
+    right: 4%;
+  }
 
   .slider,
   .slider>div {
