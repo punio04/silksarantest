@@ -373,11 +373,11 @@ i.right {
   }
 
   .slider:hover>.left {
-    left: 0;
+    left: 58px;
   }
 
   .slider:hover>.right {
-    right: 0;
+    right:58px;
   }
 
   .cv1__video {
@@ -434,15 +434,25 @@ i.right {
   }
 
   .cv1 .btn {
-    position: absolute;
     top: 53%;
-    left: 11%;
-    right: 4%;
+    left: 4%;
+    width: 92%;
+    right: 0%;
   }
 
-  .wrapper img {
-    width: 100%;
+  .cv4 .btn {
+    top: 53%;
+    left: 5%;
+    width: 90%;
+    right: 0%;
+    top: 92% !important;
   }
+}
+
+
+.wrapper img {
+  width: 100%;
+}
 }
 
 
@@ -670,5 +680,19 @@ i.right {
     display: inline-block;
     width: 0;
     height: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .purchase-btn img {
+    width: 100%;
+  }
+
+  footer div {
+    width: 100%;
+  }
+
+  .btn {
+    width: 52%;
   }
 }
